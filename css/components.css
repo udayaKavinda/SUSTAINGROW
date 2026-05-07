@@ -1,0 +1,349 @@
+.eyebrow {
+  display: inline-flex;
+  background: color-mix(in oklab, var(--color-primary) 15%, var(--color-surface));
+  color: var(--color-primary);
+  border: 1px solid color-mix(in oklab, var(--color-primary) 32%, var(--color-border));
+  border-radius: 999px;
+  padding: var(--space-2xs) var(--space-sm);
+  font-size: var(--type-sm);
+  font-weight: 600;
+}
+
+.lead {
+  margin-top: var(--space-md);
+  max-width: 62ch;
+}
+
+.section-tag {
+  margin-bottom: var(--space-sm);
+  font-size: var(--type-sm);
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  min-height: 44px;
+  padding: 0.62rem 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast),
+    background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-primary {
+  color: #f6fff8;
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--color-primary) 95%, #fff),
+    var(--color-primary)
+  );
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+  background: var(--color-primary-hover);
+  color: #ffffff;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-secondary {
+  color: var(--color-text);
+  border-color: var(--color-border);
+  background: var(--color-surface);
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-primary);
+}
+
+.menu a,
+.theme-toggle,
+.menu-toggle {
+  min-height: 40px;
+  border-radius: var(--radius-sm);
+  padding: 0.52rem 0.8rem;
+  color: var(--color-text);
+  font-size: var(--type-sm);
+  font-weight: 600;
+  border: 1px solid transparent;
+  background: transparent;
+}
+
+.menu a:hover,
+.theme-toggle:hover,
+.menu-toggle:hover {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+.menu-toggle {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.hero-actions {
+  margin-top: var(--space-lg);
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.pill {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: var(--space-2xs) var(--space-sm);
+  font-size: var(--type-sm);
+  color: var(--color-text-soft);
+}
+
+.hero-card,
+.content-card,
+.stat-card,
+.risk-card,
+.feature-card,
+.insight-card,
+.contact-card,
+.contact-form {
+  background: color-mix(in oklab, var(--color-surface) 96%, transparent);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.hero-card,
+.content-card,
+.contact-card,
+.contact-form {
+  padding: var(--space-lg);
+}
+
+.hero-card h2 {
+  font-size: var(--type-lg);
+  margin-bottom: var(--space-md);
+}
+
+.hero-card ul {
+  list-style: none;
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.hero-card li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  border-bottom: 1px solid color-mix(in oklab, var(--color-border) 68%, transparent);
+  padding-bottom: var(--space-sm);
+}
+
+.hero-card li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.hero-card li span {
+  color: var(--color-text-soft);
+  font-size: var(--type-sm);
+}
+
+.hero-card li strong {
+  font-size: var(--type-md);
+}
+
+.stat-card,
+.risk-card,
+.feature-card,
+.insight-card {
+  padding: var(--space-md);
+}
+
+.stat-card h3 {
+  color: var(--color-primary);
+}
+
+.risk-card p,
+.insight-card p {
+  margin-top: var(--space-xs);
+}
+
+.feature-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+}
+
+.feature-card:hover,
+.risk-card:hover,
+.insight-card:hover,
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.table-wrap {
+  margin-top: var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-surface);
+}
+
+thead {
+  background: color-mix(in oklab, var(--color-surface-muted) 88%, transparent);
+}
+
+th,
+td {
+  text-align: left;
+  border-bottom: 1px solid color-mix(in oklab, var(--color-border) 70%, transparent);
+  padding: 0.85rem 0.95rem;
+  font-size: var(--type-sm);
+}
+
+tbody tr:hover {
+  background: color-mix(in oklab, var(--color-primary) 6%, transparent);
+}
+
+blockquote {
+  margin: var(--space-lg) 0 0;
+  border-left: 4px solid var(--color-primary);
+  border-radius: var(--radius-sm);
+  padding: var(--space-sm) var(--space-md);
+  background: color-mix(in oklab, var(--color-primary) 6%, var(--color-surface));
+  color: var(--color-text-soft);
+}
+
+.empty-state {
+  margin-top: var(--space-md);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  background: color-mix(in oklab, var(--color-surface-muted) 80%, transparent);
+}
+
+.skeleton-line {
+  min-height: 130px;
+  background: linear-gradient(
+    90deg,
+    color-mix(in oklab, var(--color-surface-muted) 92%, transparent) 20%,
+    color-mix(in oklab, var(--color-border) 76%, transparent) 45%,
+    color-mix(in oklab, var(--color-surface-muted) 92%, transparent) 75%
+  );
+  background-size: 240% 100%;
+  animation: shimmer 1.25s infinite;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: -140% 0;
+  }
+}
+
+.contact-card p {
+  margin-top: var(--space-sm);
+}
+
+.closing-line {
+  margin-top: var(--space-lg);
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.contact-form {
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.contact-form h3 {
+  margin-bottom: var(--space-sm);
+}
+
+.contact-form label {
+  font-size: var(--type-sm);
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  min-height: 44px;
+  background: var(--color-surface);
+  padding: 0.7rem 0.8rem;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--color-focus);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-focus) 25%, transparent);
+  outline: none;
+}
+
+.contact-form input[aria-invalid="true"],
+.contact-form textarea[aria-invalid="true"] {
+  border-color: var(--color-danger);
+}
+
+.form-feedback {
+  min-height: 1.3rem;
+  margin-top: var(--space-2xs);
+  font-size: var(--type-sm);
+}
+
+.form-feedback.is-error {
+  color: var(--color-danger);
+}
+
+.form-feedback.is-success {
+  color: var(--color-success);
+}
+
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  background: color-mix(in oklab, var(--color-surface-muted) 90%, transparent);
+  color: var(--color-text-soft);
+}
+
+.site-footer a {
+  text-decoration: none;
+  font-weight: 600;
+}

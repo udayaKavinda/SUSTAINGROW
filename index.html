@@ -1,61 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SUSTAINGROW (PVT) LTD | Quality Inspection</title>
+    <title>SUSTAINGROW (PVT) LTD | Independent Coco Peat Inspection</title>
     <meta
       name="description"
-      content="SUSTAINGROW (PVT) LTD provides independent coco peat and coir growing media quality inspection services in Sri Lanka."
+      content="SUSTAINGROW (PVT) LTD is a Sri Lanka-based independent quality inspection company for coco peat and coir growing media."
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
+    <meta
+      name="keywords"
+      content="coco peat inspection, coir quality control, Sri Lanka coco peat, EC pH moisture testing, pre-shipment inspection"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <meta property="og:title" content="SUSTAINGROW (PVT) LTD" />
+    <meta
+      property="og:description"
+      content="Growing Trust. Ensuring Quality. Independent coco peat and coir quality inspection services."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/logo.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="assets/logo.jpeg" />
+    <link rel="preload" href="assets/logo.jpeg" as="image" />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
   </head>
   <body>
-    <header class="hero" id="top">
-      <nav class="container nav">
-        <a class="brand" href="#top">SUSTAINGROW</a>
-        <div class="nav-links">
-          <a class="nav-btn" href="#about">About Us</a>
-          <a class="nav-btn" href="#purpose">Our Purpose</a>
-          <a class="nav-btn" href="#why-us">Why Select Us</a>
-          <a class="nav-btn accent" href="#contact">Contact</a>
-        </div>
-      </nav>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-      <div class="container hero-content">
-        <div class="hero-text">
-          <p class="eyebrow">Trusted Quality Verification in Sri Lanka</p>
-          <h1>We do not just inspect products - we protect your investment.</h1>
-          <p>
-            Independent and transparent quality inspection services for coco peat
-            and coir-based growing media before shipment.
-          </p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#about">Learn More</a>
-            <a class="btn secondary" href="#contact">Get in Touch</a>
+    <header class="site-header" id="top">
+      <div class="container">
+        <nav class="top-nav" aria-label="Primary navigation">
+          <a class="brand" href="#top" aria-label="SUSTAINGROW home">
+            <img
+              src="assets/logo.jpeg"
+              alt="SUSTAINGROW logo"
+              width="50"
+              height="50"
+              class="brand-logo"
+              decoding="async"
+            />
+            <span>
+              <strong>SUSTAINGROW</strong>
+              <small>(PVT) LTD</small>
+            </span>
+          </a>
+
+          <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainMenu">
+            Menu
+          </button>
+
+          <div class="menu" id="mainMenu">
+            <a href="#about">About Us</a>
+            <a href="#purpose">Our Purpose</a>
+            <a href="#why-us">Why Select Us</a>
+            <a href="#contact">Contact</a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle color mode">
+              <span aria-hidden="true">Light</span>
+            </button>
           </div>
-        </div>
-        <div class="hero-image-wrap">
-          <img
-            src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1400&q=80"
-            alt="Coco peat quality and growing media inspection"
-          />
-        </div>
+        </nav>
       </div>
     </header>
 
-    <main>
-      <section class="section" id="about">
-        <div class="container grid-two">
+    <main id="main-content">
+      <section class="hero section">
+        <div class="container hero-grid">
           <div>
+            <p class="eyebrow">Independent Inspection • Sri Lanka • Global Standards</p>
+            <h1>We do not just inspect products. We protect your investment.</h1>
+            <p class="lead">
+              We help international buyers source coco peat and coir growing media
+              with confidence through transparent pre-shipment quality verification.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact">Book an Inspection</a>
+              <a class="btn btn-secondary" href="#why-us">Why SUSTAINGROW</a>
+            </div>
+            <div class="hero-proof" aria-label="Trust indicators">
+              <div class="pill">Report delivery in 24 hours</div>
+              <div class="pill">Independent and unbiased checks</div>
+              <div class="pill">Complimentary first inspection</div>
+            </div>
+          </div>
+          <aside class="hero-card">
+            <h2>Inspection Snapshot</h2>
+            <ul>
+              <li><span>Coverage</span><strong>On-site factory inspections</strong></li>
+              <li><span>Core tests</span><strong>EC, pH, moisture, contamination</strong></li>
+              <li><span>Location</span><strong>Hettipola, Sri Lanka</strong></li>
+              <li><span>Support</span><strong>Buyer-focused, supplier-neutral</strong></li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-muted">
+        <div class="container stat-grid" aria-label="Business highlights">
+          <article class="stat-card">
+            <h3>24h</h3>
+            <p>Fast, decision-ready inspection reports</p>
+          </article>
+          <article class="stat-card">
+            <h3>100%</h3>
+            <p>Independent inspection and unbiased reporting</p>
+          </article>
+          <article class="stat-card">
+            <h3>4+</h3>
+            <p>Critical quality checkpoints in every visit</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container split-grid">
+          <article class="content-card">
             <p class="section-tag">About Us</p>
-            <h2>Independent quality inspection for international buyers.</h2>
+            <h2>Independent quality inspection for global buyers.</h2>
             <p>
               SUSTAINGROW (PVT) LTD is a Sri Lanka-based independent quality
               inspection company specializing in coco peat and coir-based growing
@@ -63,46 +126,74 @@
               required quality standards before shipment.
             </p>
             <p>
-              Our team has deep industry knowledge and hands-on experience in coco
-              peat production. We conduct on-site factory inspections, verify
-              production processes, and perform essential quality checks including
-              EC, pH, moisture, and contamination analysis.
+              With deep industry knowledge and hands-on production experience, our
+              team performs on-site factory inspections, process verification, and
+              technical quality checks to reduce risk before export.
             </p>
-          </div>
-          <div class="image-card">
-            <img
-              src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=80"
-              alt="Healthy plants grown using quality coco peat"
-            />
-          </div>
+          </article>
+          <article class="content-card">
+            <p class="section-tag">Test Parameters</p>
+            <h2>Data-backed quality confirmation.</h2>
+            <div class="table-wrap">
+              <table>
+                <caption class="sr-only">
+                  Quality parameters measured during inspections
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Parameter</th>
+                    <th scope="col">Purpose</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>EC</td>
+                    <td>Confirms salinity and nutrient suitability</td>
+                  </tr>
+                  <tr>
+                    <td>pH</td>
+                    <td>Verifies root-safe pH range for crop performance</td>
+                  </tr>
+                  <tr>
+                    <td>Moisture</td>
+                    <td>Controls storage stability and shipment condition</td>
+                  </tr>
+                  <tr>
+                    <td>Contamination</td>
+                    <td>Identifies foreign matter and quality risks</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="section alt" id="purpose">
-        <div class="container grid-two reverse">
-          <div class="image-card">
-            <img
-              src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1200&q=80"
-              alt="Sustainable agricultural supply chain quality checks"
-            />
-          </div>
-          <div>
-            <p class="section-tag">Our Purpose</p>
-            <h2>Reducing risk in the global coco peat market.</h2>
-            <p>
-              Inconsistent quality can lead to shipment rejection, crop damage,
-              and financial loss. Our mission is to eliminate these risks by
-              providing transparent, accurate, and timely inspection services to
-              every buyer we support.
-            </p>
+      <section class="section section-muted" id="purpose">
+        <div class="container">
+          <p class="section-tag">Our Purpose</p>
+          <h2>Eliminating quality uncertainty in the coco peat supply chain.</h2>
+          <div class="risk-grid">
+            <article class="risk-card">
+              <h3>Shipment Rejection Risk</h3>
+              <p>We identify quality deviations before dispatch to avoid rejected consignments.</p>
+            </article>
+            <article class="risk-card">
+              <h3>Crop Damage Risk</h3>
+              <p>Parameter checks ensure the growing media is agronomically safe and consistent.</p>
+            </article>
+            <article class="risk-card">
+              <h3>Financial Loss Risk</h3>
+              <p>Reliable reporting helps buyers make informed, lower-risk procurement decisions.</p>
+            </article>
           </div>
         </div>
       </section>
 
       <section class="section" id="why-us">
         <div class="container">
-          <p class="section-tag">Why SUSTAINGROW</p>
-          <h2>Why buyers select us</h2>
+          <p class="section-tag">Why Select Us</p>
+          <h2>Built for trust, speed, and transparency.</h2>
           <div class="feature-grid">
             <article class="feature-card">Independent and unbiased inspection</article>
             <article class="feature-card">Experienced and technically qualified team</article>
@@ -118,19 +209,102 @@
           </blockquote>
         </div>
       </section>
+
+      <section class="section section-muted" id="insights">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="section-tag">Field Insights</p>
+              <h2>Real-time quality intelligence from inspections.</h2>
+            </div>
+          </div>
+          <div id="insightsSkeleton" class="insights-grid">
+            <article class="insight-card skeleton-line" aria-hidden="true"></article>
+            <article class="insight-card skeleton-line" aria-hidden="true"></article>
+            <article class="insight-card skeleton-line" aria-hidden="true"></article>
+          </div>
+          <div id="insightsContent" class="insights-grid hidden">
+            <article class="insight-card">
+              <h3>Pre-shipment readiness confirmed</h3>
+              <p>Batch verified against core technical criteria with no critical deviations.</p>
+            </article>
+            <article class="insight-card">
+              <h3>Process consistency improved</h3>
+              <p>On-site process validation indicates more stable moisture control practices.</p>
+            </article>
+            <article class="insight-card">
+              <h3>Supplier communication aligned</h3>
+              <p>Shared inspection evidence improved buyer-supplier decision confidence.</p>
+            </article>
+          </div>
+          <div id="insightsEmpty" class="empty-state hidden" role="status">
+            <p>No additional case updates published yet. Contact us for latest inspection availability.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container contact-grid">
+          <article class="contact-card">
+            <p class="section-tag">Contact Information</p>
+            <h2>Start with a risk-free first inspection.</h2>
+            <p>Email: <a href="mailto:info@sustaingrowsl.com">info@sustaingrowsl.com</a></p>
+            <p>Address: Hettipola, Sri Lanka</p>
+            <p class="closing-line">
+              "We do not just inspect products. We protect your investment."
+            </p>
+          </article>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <h3>Inspection Request</h3>
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+
+            <label for="email">Business Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" autocomplete="organization" required />
+
+            <label for="message">Inspection Requirement</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Tell us shipment timing, product type, and checks needed."
+              required
+            ></textarea>
+
+            <button class="btn btn-primary" id="submitBtn" type="submit">
+              Send Request
+            </button>
+            <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer" id="contact">
-      <div class="container footer-content">
-        <div>
-          <h3>Contact Information</h3>
-          <p>Email: <a href="mailto:info@sustaingrowsl.com">info@sustaingrowsl.com</a></p>
-          <p>Address: Hettipola, Sri Lanka</p>
-        </div>
-        <p class="copyright">© <span id="year"></span> SUSTAINGROW (PVT) LTD. All rights reserved.</p>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> SUSTAINGROW (PVT) LTD. All rights reserved.</p>
+        <a href="#top">Back to top</a>
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "SUSTAINGROW (PVT) LTD",
+        "email": "info@sustaingrowsl.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Hettipola",
+          "addressCountry": "LK"
+        },
+        "description": "Independent quality inspection company for coco peat and coir-based growing media."
+      }
+    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
